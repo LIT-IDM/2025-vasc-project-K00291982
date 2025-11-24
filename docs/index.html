@@ -15,7 +15,7 @@
         body {
             font-family: 'Nunito', sans-serif;
 
-            /* Local background image in same folder as this HTML */
+            /* Local background image */
             background-image: url('backgroundImage.jpg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -24,9 +24,42 @@
 
             min-height: 100vh;
             padding: 40px 20px;
+            overflow-x: hidden;
         }
 
+        /* --- ANIMATED SNOW --- */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: white;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            pointer-events: none;
+            animation-name: snowfall;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes snowfall {
+            0% { transform: translateY(-10vh) translateX(0); }
+            100% { transform: translateY(110vh) translateX(20px); }
+        }
+
+        /* Randomized flake positions */
+        .snowflake:nth-child(1) { left: 10%; animation-duration: 7s; }
+        .snowflake:nth-child(2) { left: 20%; animation-duration: 9s; }
+        .snowflake:nth-child(3) { left: 30%; animation-duration: 8s; }
+        .snowflake:nth-child(4) { left: 40%; animation-duration: 6s; }
+        .snowflake:nth-child(5) { left: 50%; animation-duration: 10s; }
+        .snowflake:nth-child(6) { left: 60%; animation-duration: 7s; }
+        .snowflake:nth-child(7) { left: 70%; animation-duration: 9s; }
+        .snowflake:nth-child(8) { left: 80%; animation-duration: 8s; }
+        .snowflake:nth-child(9) { left: 90%; animation-duration: 6s; }
+        .snowflake:nth-child(10) { left: 15%; animation-duration: 11s; }
+
+        /* --- CONTENT BOX --- */
         .container-box {
+            position: relative;
             background: rgba(255, 255, 255, 0.85);
             border-radius: 20px;
             padding: 40px;
@@ -76,7 +109,20 @@
 
 <body>
 
+<!-- SNOWFLAKE ELEMENTS -->
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+
 <div class="container-box">
+
     <div class="festive-icon">🎄</div>
 
     <h1>Welcome to the Christmas AR Experience!</h1>
@@ -98,7 +144,7 @@
         Enjoy this festive moment — and have a wonderful Christmas! 🎅✨
     </p>
 
-    <a href="Build/test1.apk" class="btn btn-success download-btn mt-4">
+    <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" class="btn btn-success download-btn mt-4">
         🎁 Download the App
     </a>
 </div>
