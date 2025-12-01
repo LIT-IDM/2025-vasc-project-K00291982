@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "AR-Xmas.sln"
+    "dotnet.defaultSolution": "AR_Project2.slnx"
 }
