@@ -111,3 +111,4 @@ Camera access is used solely for AR functionality and QR code scanning.
 
 ---
 
+
