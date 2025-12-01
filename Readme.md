@@ -45,8 +45,6 @@ Once installed, the user scans the same QR code **inside the app** to begin the 
 GitHub Repo:  
 https://github.com/LIT-IDM/2025-vasc-project-K00291982
 
-(If hosted on GitHub Pages soon, add the link here.)
-
 ---
 
 ## Installation
